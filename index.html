@@ -21,9 +21,9 @@
 
       <!-- Input Radio Section -->
       <div class="text-sm">
-        <input type="radio" name="service" id="service">
+        <input type="radio" name="radio" id="service" class="text-slate-500 bg-slate-500 checked:text-slate-500 checked:bg-slate-500">
         <label for="service" class="font-mono text-slate-500 mr-8">Service</label>
-        <input type="radio" name="product" id="product">
+        <input type="radio" name="radio" id="product">
         <label for="product" class="font-mono text-slate-500">Product</label>
       </div>
       
@@ -35,6 +35,12 @@
         <textarea name="description" id="description" placeholder="Describe your product" cols="30" rows="3" class="p-2 rounded-md border border-slate-300"></textarea>
         <label for="price">Price*</label>
         <input type="text" name="price" id="price" placeholder="Enter amount" class="p-2 rounded-md border border-slate-300">
+      </div>
+
+      <!-- Item's Buttons -->
+      <div class="flex justify-center items-center space-x-9">
+        <a href="#">Cancel</a>
+        <a href="#" class="px-5 py-3 bg-black text-white rounded-lg border hover:bg-slate-50 hover:text-black hover:border-black duration-200">Add Item</a>
       </div>
     </div>
   </div>
