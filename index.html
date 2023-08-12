@@ -13,11 +13,29 @@
   <!-- Global Container -->
   <div class="flex justify-center items-center min-h-screen bg-slate-300">
     <!-- Card -->
-    <div class="flex flex-col space-y-4 p-6 rounded-2xl text-left bg-slate-50">
+    <div class="flex flex-col space-y-6 py-10 px-16 rounded-2xl text-left bg-slate-50">
       <h1 class="font-mono text-2xl font-bold tracking-tight">
         Add new item
       </h1>
       <p class="font-mono text-sm font-bold tracking-tight">What kind of item would you like to add?</p>
+
+      <!-- Input Radio Section -->
+      <div class="text-sm">
+        <input type="radio" name="service" id="service">
+        <label for="service" class="font-mono text-slate-500 mr-8">Service</label>
+        <input type="radio" name="product" id="product">
+        <label for="product" class="font-mono text-slate-500">Product</label>
+      </div>
+      
+      <!-- Main Item Input Section -->
+      <div class="flex flex-col space-y-3">
+        <label for="name">Name*</label>
+        <input type="text" id="name" placeholder="Eg. Business Consulting" class="p-2 rounded-md border border-y-slate-300">
+        <label for="description">Description</label>
+        <textarea name="description" id="description" placeholder="Describe your product" cols="30" rows="3" class="p-2 rounded-md border border-slate-300"></textarea>
+        <label for="price">Price*</label>
+        <input type="text" name="price" id="price" placeholder="Enter amount" class="p-2 rounded-md border border-slate-300">
+      </div>
     </div>
   </div>
 </body>
